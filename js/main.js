@@ -83,6 +83,7 @@ function removeError(){
     atividadeInput.classList.remove('error')
     mensagemSucessoOuErro.classList.remove('error')
     mensagemSucessoOuErro.innerHTML = ''
+    atividadeInput.focus()
 }
 
 form.addEventListener('keyup', function(e){
