@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    margin-top: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+header img {
+    height: 64px;
+    margin: 0 10px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 960px;
+    width: 100%;
+    padding: 5px 0;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+form { 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 640px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+form input {
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: white;
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: aqua;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: rgb(0, 156, 156);
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+table td img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+tfoot tr td{
+    border-top: solid 2px black;
+    font-weight: bold;
+}
+
+#aour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td::first-letter {
+    text-transform: uppercase;
+}
+
+.aprovado {
+    color: green;
+}
+
+.reprovado {
+    color: red;
+}
+
+.error {
+    outline-color: red;
+    color: red;
+    border-color: red;
+}
+
+#mensagem {
+    margin: 0 auto;
+    max-width: 640px;
+    margin-top: -40px;
+}
+
+.linhaclara {
+    background-color: rgb(216, 216, 216);
+}
+
+#remover-linha:hover {
+    cursor: pointer;
+}
