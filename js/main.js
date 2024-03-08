@@ -39,6 +39,7 @@ function removerLinha(elementoClicado) {
 }
 
 function calcularMedia(){
+    mensagemSucessoOuErro.innerHTML = ''
     const linha = linhaAdd.querySelectorAll('.notaadd')
     if (linha.length > 0) {
         let media = 0;
