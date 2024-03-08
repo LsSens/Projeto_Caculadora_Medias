@@ -39,7 +39,7 @@ function removerLinha(elementoClicado) {
 }
 
 function calcularMedia(){
-    mensagemSucessoOuErro.innerHTML = ''
+    removeError()
     const linha = linhaAdd.querySelectorAll('.notaadd')
     if (linha.length > 0) {
         let media = 0;
@@ -79,11 +79,15 @@ function error(m){
     mensagemSucessoOuErro.innerText = m
 }
 
+function removeError(){
+    atividadeInput.classList.remove('error')
+    mensagemSucessoOuErro.classList.remove('error')
+    mensagemSucessoOuErro.innerHTML = ''
+}
+
 form.addEventListener('keyup', function(e){
     if (e.key !== 'Enter') {
-        atividadeInput.classList.remove('error')
-        mensagemSucessoOuErro.classList.remove('error')
-        mensagemSucessoOuErro.innerHTML = ''
+    removeError()
     }
 })
 
